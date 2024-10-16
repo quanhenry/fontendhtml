@@ -1,0 +1,31 @@
+Tên Doanh Nghiệp/Tổ Chức: TechGreen Solutions
+Mô Tả Ngắn Gọn:
+[TechGreen Solutions - Công ty công nghệ hàng đầu Việt Nam chuyên cung cấp giải pháp phần mềm và phần cứng thông minh, thân thiện với môi trường cho doanh nghiệp và cơ quan chính phủ.]
+Lĩnh Vực Hoạt Động:
+[x] Công nghệ
+Sản Phẩm/Dịch Vụ Chính:
+[GreenCloud - Dịch vụ điện toán đám mây tiết kiệm năng lượng
+EcoSmart Office - Hệ thống quản lý văn phòng thông minh, tối ưu hóa sử dụng năng lượng
+GreenCity - Nền tảng IoT cho quản lý đô thị thông minh và bền vững
+EcoTrack - Phần mềm theo dõi và báo cáo phát thải carbon cho doanh nghiệp
+GreenDev - Dịch vụ phát triển phần mềm tùy chỉnh với quy trình xanh]
+Phong Cách thiết kế: [Hiện đại, Minimalist, Eco-tech]
+Màu Sắc Chủ Đạo: [Xanh lá #00A86B, Xám #808080, Trắng #FFFFFF]
+Logo Doanh Nghiệp: [Hình ảnh logo kết hợp biểu tượng chip máy tính và lá cây]
+Hình Ảnh Doanh Nghiệp: [Ảnh văn phòng xanh của TechGreen, đội ngũ nhân viên đa dạng, sản phẩm và dự án tiêu biểu]
+Thông Tin Liên Hệ:
+Địa chỉ: [Tầng 15, Tòa nhà Eco Tower, 53 Quang Trung, Hai Bà Trưng, Hà Nội]
+Số điện thoại: [024 7300 8686]
+Email: [info@techgreen.vn]
+Giới Thiệu Nhân Sự/Đội Ngũ:
+
+Tên: [Nguyễn Minh Tuấn]
+Vị trí: [Giám đốc điều hành (CEO)]
+Mô tả: [Với hơn 15 năm kinh nghiệm trong ngành công nghệ, ông Tuấn là người tiên phong trong việc kết hợp công nghệ và phát triển bền vững tại Việt Nam.]
+Tên: [Trần Thị Mai Anh]
+Vị trí: [Giám đốc Công nghệ (CTO)]
+Mô tả: [Tiến sĩ Khoa học Máy tính từ Đại học Stanford, chị Mai Anh dẫn dắt đội ngũ phát triển sản phẩm với tầm nhìn về công nghệ xanh.]
+Tên: [Lê Hoàng Nam]
+Vị trí: [Giám đốc Sản phẩm (CPO)]
+Mô tả: [Với background về thiết kế UX/UI và phát triển bền vững, anh Nam đảm bảo mọi sản phẩm của TechGreen đều thân thiện với người dùng và môi trường.]
+Call-to-Action (CTA): [Đăng ký ngay để nhận tư vấn miễn phí về giải pháp công nghệ xanh!]

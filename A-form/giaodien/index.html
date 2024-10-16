@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" class="section">
+    </div>
+
+    <div id="giới_thiệu_dịch_vụ" class="section">
+    </div>
+
+    <div id="danh_sách_dịch_vụ" class="section">
+    </div>
+
+    <div id="hình_ảnh_và_dự_án_tiêu_biểu" class="section">
+    </div>
+
+    <div id="đánh_giá_của_khách_hàng" class="section">
+    </div>
+
+    <div id="thông_tin_liên_hệ" class="section">
+    </div>
+
+    <div id="call-to-action_(cta)" class="section">
+    </div>
+
+    <div id="footer" class="section">
+    </div>
+
+    <script>
+        // Hàm để tải nội dung từ các file HTML riêng biệt
+        function loadContent(id, filename) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading ' + filename + ':', error));
+        }
+
+        // Tải nội dung cho từng phần
+        // loadContent('header', 'header.html');
+        loadContent('giới_thiệu_dịch_vụ', 'giới_thiệu_dịch_vụ.html');
+        loadContent('danh_sách_dịch_vụ', 'danh_sách_dịch_vụ.html');
+        loadContent('hình_ảnh_và_dự_án_tiêu_biểu', 'hình_ảnh_và_dự_án_tiêu_biểu.html');
+        loadContent('đánh_giá_của_khách_hàng', 'đánh_giá_của_khách_hàng.html');
+        loadContent('thông_tin_liên_hệ', 'thông_tin_liên_hệ.html');
+        loadContent('call-to-action_(cta)', 'call-to-action_(cta).html');
+        // loadContent('footer', 'footer.html');
+    </script>
+</body>
+
+</html>

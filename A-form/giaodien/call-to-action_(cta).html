@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call-to-Action (CTA)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        :root {
+            --color-primary: #228B22;
+            --color-secondary: #8B4513;
+            --color-background: #FFFFF0;
+            --color-cta: #FF6347; /* Màu đỏ nhạt cho nút CTA */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-secondary);
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: var(--color-secondary);
+            color: var(--color-background);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .cta-button {
+            background-color: var(--color-cta);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .cta-container {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang chủ</h1>
+    </header>
+
+    <main>
+        <h2>Chào mừng đến với dịch vụ của chúng tôi</h2>
+        <p>Chúng tôi cung cấp các giải pháp tốt nhất cho bạn.</p>
+        <img src="https://picsum.photos/seed/123/800/400" alt="Hình ảnh minh họa" style="max-width: 100%; height: auto; margin: 2rem 0;">
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Công ty ABC. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <div class="cta-container">
+        <button class="cta-button" id="ctaButton">Đặt lịch tư vấn miễn phí ngay hôm nay!</button>
+    </div>
+
+    <script>
+        // Tạo hiệu ứng xuất hiện cho nút CTA
+        gsap.from(".cta-button", {
+            duration: 1,
+            opacity: 0,
+            y: 50,
+            ease: "power3.out"
+        });
+
+        // Thêm hiệu ứng khi hover
+        const ctaButton = document.getElementById('ctaButton');
+        ctaButton.addEventListener('mouseenter', () => {
+            gsap.to(ctaButton, {
+                duration: 0.3,
+                scale: 1.05,
+                ease: "power1.out"
+            });
+        });
+
+        ctaButton.addEventListener('mouseleave', () => {
+            gsap.to(ctaButton, {
+                duration: 0.3,
+                scale: 1,
+                ease: "power1.out"
+            });
+        });
+
+        // Thêm hiệu ứng khi click
+        ctaButton.addEventListener('click', () => {
+            gsap.to(ctaButton, {
+                duration: 0.1,
+                scale: 0.95,
+                yoyo: true,
+                repeat: 1,
+                ease: "power1.inOut"
+            });
+            // Thêm logic xử lý khi nút được nhấn ở đây
+            console.log("Nút CTA đã được nhấn!");
+        });
+    </script>
+</body>
+</html>

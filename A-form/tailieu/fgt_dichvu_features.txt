@@ -1,0 +1,32 @@
+1. Giới thiệu dịch vụ:
+   - Hiển thị tên công ty "Sức Khỏe Tươi Sáng" và mô tả ngắn gọn "Chăm sóc sức khỏe tận tâm, chuyên nghiệp tại nhà cho mọi lứa tuổi"
+   - Sử dụng phong cách thiết kế hiện đại, sạch sẽ và thân thiện
+   - Màu sắc chủ đạo: đỏ nhạt, trắng và xanh dương nhạt (#87CEFA)
+   - Hiển thị logo công ty với biểu tượng trái tim và cây xanh
+
+2. Danh sách dịch vụ:
+   - Liệt kê 7 dịch vụ chính: Điều dưỡng chuyên nghiệp 24/7, Vật lý trị liệu và phục hồi chức năng, Chăm sóc người cao tuổi, Hỗ trợ sau phẫu thuật, Tư vấn dinh dưỡng cá nhân hóa, Theo dõi sức khỏe từ xa qua thiết bị thông minh, Dịch vụ xe cứu thương riêng
+   - Sử dụng các icon hoặc hình ảnh minh họa cho mỗi dịch vụ
+   - Bố cục dạng lưới hoặc danh sách với màu nền xanh dương nhạt
+
+3. Hình ảnh và dự án tiêu biểu:
+   - Hiển thị hình ảnh nhân viên y tế đang chăm sóc bệnh nhân tại nhà
+   - Trưng bày hình ảnh thiết bị y tế hiện đại
+   - Giới thiệu không gian sống được thiết kế phù hợp cho người bệnh
+   - Sử dụng bố cục dạng lưới hoặc slideshow với phong cách hiện đại
+
+4. Đánh giá của khách hàng:
+   - Hiển thị 3 testimonials từ khách hàng Nguyễn Văn A, Trần Thị B và Lê Văn C
+   - Sử dụng thiết kế card với hình ảnh đại diện và trích dẫn
+   - Màu nền trắng với viền màu đỏ nhạt
+
+5. Thông tin liên hệ:
+   - Hiển thị địa chỉ công ty
+   - Tạo nút gọi điện và gửi email
+   - Nhúng bản đồ Google Maps chỉ đường đến công ty
+   - Thiết kế đơn giản, rõ ràng với màu nền trắng và chữ màu đen
+
+6. Call-to-Action (CTA):
+   - Tạo nút "Đặt lịch tư vấn miễn phí ngay hôm nay!"
+   - Thiết kế nút nổi bật với màu đỏ nhạt, chữ trắng
+   - Đặt ở vị trí dễ thấy trên trang, có thể là góc trên bên phải hoặc cuối trang

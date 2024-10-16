@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin liên hệ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        :root {
+            --color-primary: #228B22;
+            --color-secondary: #8B4513;
+            --color-background: #FFFFF0;
+            --font-size-large: 2rem;
+            --font-size-medium: 1.2rem;
+            --spacing-large: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-background);
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-large);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-large);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: var(--font-size-large);
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-large);
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        .address, .contact-buttons {
+            margin-bottom: var(--spacing-large);
+            transform: translateX(-20px);
+            opacity: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: var(--color-primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--color-secondary);
+        }
+
+        .map {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .map {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-info">
+            <h1>Thông tin liên hệ</h1>
+            <div class="address">
+                <p>Công ty TNHH ABC</p>
+                <p>123 Đường Lê Lợi, Quận 1</p>
+                <p>TP. Hồ Chí Minh, Việt Nam</p>
+            </div>
+            <div class="contact-buttons">
+                <a href="tel:+84123456789" class="btn">Gọi điện</a>
+                <a href="mailto:info@abc.com" class="btn">Gửi email</a>
+            </div>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241674315863!2d106.69911431480084!3d10.77646666213505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3c586421ef%3A0xb606461dc7627921!2zVHLhuqduIEjGsG5nIMSQ4bqhbywgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1650000000000!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <script>
+        // GSAP Animations
+        gsap.from("h1", {duration: 1, y: -20, opacity: 0, ease: "power3.out"});
+        gsap.from(".address", {duration: 1, x: -20, opacity: 0, ease: "power3.out", delay: 0.2});
+        gsap.from(".contact-buttons", {duration: 1, x: -20, opacity: 0, ease: "power3.out", delay: 0.4});
+        gsap.from(".map", {duration: 1, scale: 0.9, opacity: 0, ease: "power3.out", delay: 0.6});
+
+        // Hover effect for buttons
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                gsap.to(btn, {duration: 0.3, scale: 1.05, ease: "power2.out"});
+            });
+            btn.addEventListener('mouseleave', () => {
+                gsap.to(btn, {duration: 0.3, scale: 1, ease: "power2.out"});
+            });
+        });
+    </script>
+</body>
+</html>

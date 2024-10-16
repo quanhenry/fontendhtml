@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách dịch vụ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <style>
+        :root {
+            --color-primary: #228B22;
+            --color-secondary: #8B4513;
+            --color-background: #FFFFF0;
+            --color-light-blue: #E6F3FF;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-secondary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-unit);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: var(--spacing-unit);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-unit);
+            background-color: var(--color-light-blue);
+            padding: var(--spacing-unit);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .service-item {
+            background: linear-gradient(135deg, var(--color-background), #F0FFF0);
+            border-radius: 8px;
+            padding: var(--spacing-unit);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: var(--spacing-unit);
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .service-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--color-primary);
+            margin-bottom: calc(var(--spacing-unit) / 2);
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách dịch vụ</h1>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/1/80/80" alt="Điều dưỡng" class="service-icon">
+                <h2 class="service-title">Điều dưỡng chuyên nghiệp 24/7</h2>
+                <p>Chăm sóc toàn diện từ đội ngũ điều dưỡng chuyên nghiệp</p>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/2/80/80" alt="Vật lý trị liệu" class="service-icon">
+                <h2 class="service-title">Vật lý trị liệu và phục hồi chức năng</h2>
+                <p>Phục hồi sức khỏe với các phương pháp tiên tiến</p>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/3/80/80" alt="Chăm sóc người cao tuổi" class="service-icon">
+                <h2 class="service-title">Chăm sóc người cao tuổi</h2>
+                <p>Dịch vụ chăm sóc tận tình dành cho người cao tuổi</p>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/4/80/80" alt="Hỗ trợ sau phẫu thuật" class="service-icon">
+                <h2 class="service-title">Hỗ trợ sau phẫu thuật</h2>
+                <p>Chăm sóc đặc biệt giúp phục hồi nhanh chóng sau phẫu thuật</p>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/5/80/80" alt="Tư vấn dinh dưỡng" class="service-icon">
+                <h2 class="service-title">Tư vấn dinh dưỡng cá nhân hóa</h2>
+                <p>Chế độ dinh dưỡng được thiết kế riêng cho từng cá nhân</p>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/6/80/80" alt="Theo dõi sức khỏe" class="service-icon">
+                <h2 class="service-title">Theo dõi sức khỏe từ xa</h2>
+                <p>Giám sát sức khỏe liên tục qua thiết bị thông minh</p>
+            </div>
+            <div class="service-item">
+                <img src="https://picsum.photos/seed/7/80/80" alt="Xe cứu thương" class="service-icon">
+                <h2 class="service-title">Dịch vụ xe cứu thương riêng</h2>
+                <p>Sẵn sàng hỗ trợ vận chuyển y tế khẩn cấp 24/7</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // GSAP animations
+        gsap.from('.service-item', {
+            duration: 0.8,
+            opacity: 0,
+            y: 50,
+            stagger: 0.2,
+            ease: 'power3.out'
+        });
+
+        // Hover effect
+        document.querySelectorAll('.service-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                gsap.to(item, {duration: 0.3, scale: 1.05, ease: 'power1.out'});
+            });
+            item.addEventListener('mouseleave', () => {
+                gsap.to(item, {duration: 0.3, scale: 1, ease: 'power1.out'});
+            });
+        });
+
+        // Click effect
+        document.querySelectorAll('.service-item').forEach(item => {
+            item.addEventListener('click', () => {
+                gsap.to(item, {
+                    duration: 0.1,
+                    scale: 0.95,
+                    yoyo: true,
+                    repeat: 1,
+                    ease: 'power1.inOut'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
